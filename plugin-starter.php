@@ -12,8 +12,8 @@ License: A "Slug" license name e.g. GPL2
 
 class plugin_starter{
     public function __construct(){
-        include_once plugin_dir_path(__FILE__).'inc/pageScripts.php';
-        new pageScripts();
+        include_once plugin_dir_path(__FILE__).'inc/newsLetter.php';
+        new newsLetter();
     }
 }
 
