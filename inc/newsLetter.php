@@ -1,8 +1,15 @@
 <?php
 
+include_once plugin_dir_path(__FILE__).'newsLetterWidget.php';
+
 class newsLetter{
     public function __construct(){
         add_action('wp_enqueue_scripts',array($this,'add_scripts'));
+        add_action('widgets_init',array($this,'register_widget'));
+    }
+
+    public function register_widget(){
+        register_widget('newsLetterWidget');
     }
 
     public function add_scripts(){
