@@ -1,2 +1,2 @@
-# newsletter-plugin
+# newsletter plugin
 a plugin starter
